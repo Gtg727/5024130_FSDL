@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>list</title>
+    <style>
+    ul.custom {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+ul.custom li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-size: 0.9rem;
+}
+
+body {
+  align-items: center;
+}
+
+    </style>
 </head>
 <body>
     <h1>List</h1>
