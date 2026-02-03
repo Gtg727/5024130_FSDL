@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Report Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    @media print {
+      body {
+        background: white;
+      }
+      .card {
+        box-shadow: none;
+        border: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">wow school</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#schoolNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="schoolNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="/week03_030226/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/week03_030226/result.html">result</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/week03_030226/register.html">login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container my-5">
+  <div class="card shadow">
+    <div class="card-body">
+
+      <!-- Header -->
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">ABC International School</h2>
+        <p class="mb-0">Student Report Card</p>
+        <hr>
+      </div>
+
+      <!-- Student Info -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <p><strong>Student Name:</strong> John Doe</p>
+          <p><strong>Class:</strong> 10</p>
+          <p><strong>Roll No:</strong> 25</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Academic Year:</strong> 2025–2026</p>
+          <p><strong>Section:</strong> A</p>
+          <p><strong>Attendance:</strong> 92%</p>
+        </div>
+      </div>
+
+      <!-- Marks Table -->
+      <div class="table-responsive mb-4">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Subject</th>
+              <th>Max Marks</th>
+              <th>Marks Obtained</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mathematics</td>
+              <td>100</td>
+              <td>88</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td>100</td>
+              <td>91</td>
+              <td>A+</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>100</td>
+              <td>85</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>Social Studies</td>
+              <td>100</td>
+              <td>78</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td>Computer</td>
+              <td>100</td>
+              <td>95</td>
+              <td>A+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Summary -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <p><strong>Total Marks:</strong> 437 / 500</p>
+          <p><strong>Percentage:</strong> 87.4%</p>
+          <p><strong>Overall Grade:</strong> A</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Result:</strong> <span class="badge bg-success">Pass</span></p>
+          <p><strong>Teacher’s Remarks:</strong> Excellent performance. Keep it up!</p>
+        </div>
+      </div>
+
+      <!-- Signatures -->
+      <div class="row mt-5 text-center">
+        <div class="col-md-4">
+          <hr>
+          <p>Class Teacher</p>
+        </div>
+        <div class="col-md-4">
+          <hr>
+          <p>Principal</p>
+        </div>
+        <div class="col-md-4">
+          <hr>
+          <p>Parent / Guardian</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
